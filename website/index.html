@@ -27,30 +27,122 @@
     </div>
     <div class="nav">
         <div class="w1190 clearfix">
-            <a href="" title="锦程国旅" class="fl"><img src="images/logo.png" /></a>
-            <ul class="fr">
+            <a href="" title="锦程国旅" class="fl"><img src="images/logo.png" class="logo" /></a>
+            <ul class="fr clearfix navul">
                 <li>
-                    <a href=""></a>
+                    <a href="">首页</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">省心跟团游</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">自由行</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">私人订制</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">签证办理</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">机票预订</a>
+                </li>
+                <li>
+                    <a href="">商务合作</a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="index_swiper">
+        <a class="arrow-left" href="javascript:;"></a>
+        <a class="arrow-right" href="javascript:;"></a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href=""><img src="images/banner01.jpg" class="pic" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="images/banner01.jpg" class="pic" /></a>
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <div class="index_seach">
+            <div class="w1190 clearfix">
+                <div class="startpoint"><input type="text" name="" value="" placeholder="出发地：北京" /></div>
+                <div class="endpoint"><input type="text" name="" value="" placeholder="目的地：" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="content01">
+        <div class="w1190">
+            <div class="index_title">
+                <div>当季热门推荐</div>
+                <p>HOT SEASON RECOMMENDATION</p>
+            </div>
+            <div class="accordion">
+                <ul class="clearfix">
+                    <li>
+                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <div class="fl">
+                            <img src="images/img01_s.jpg" />
+                            <span>意大利 + 希腊异域风情13日自由订制</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <div class="fl">
+                            <img src="images/img02_s.jpg" />
+                            <span>澳新（海陆空）12天昆明起止全国联运</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <div class="fl">
+                            <img src="images/img03_s.jpg" />
+                            <span>美国东西海岸 + 夏威夷全景14天自由订制</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <div class="fl">
+                            <img src="images/img04_s.jpg" />
+                            <span>澳新凯【千礁百魅】11日长沙起多省联运</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content02">
+        <div class="w1190">
+            <div class="index_title">
+                <div>定制产品精选</div>
+                <p>Custom product selection</p>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
-<script></script>
+<script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/idangerous.swiper.min.js"></script>
+<script>
+    // banner大图
+    var mySwiper = new Swiper(".swiper-container", {
+        pagination: ".pagination",
+        paginationClickable: true,
+        autoplay: 3000,
+        speed: 300,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        noSwiping: true
+    });
+    //accordion手风琴
+    $(".accordion ul li").hover(function() {
+        $(this).stop(true).animate({
+            width: "1008px"
+        }, 1000).siblings().stop(true).animate({
+            width: "58px"
+        }, 1000);
+    });
+</script>
