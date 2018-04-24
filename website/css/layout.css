@@ -1,0 +1,28 @@
+.w1190 {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 30px;
+    line-height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 12px;
+}
+
+.header a {
+    color: #fff;
+}
+
+.entryline {
+    margin: 0 20px;
+}
+
+.header .about {
+    margin: 0 50px;
+}
+
+.nav {
+    height: 68px;
+}

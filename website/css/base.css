@@ -1,0 +1,208 @@
+@charset "utf-8";
+/*阿里巴巴矢量图标库*/
+
+/*使用font-face声明字体*/
+@font-face {
+  font-family: 'iconfont';  /* project id 568049 */
+  src: url('//at.alicdn.com/t/font_568049_ub38jx3635yrdx6r.eot');
+  src: url('//at.alicdn.com/t/font_568049_ub38jx3635yrdx6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_568049_ub38jx3635yrdx6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_568049_ub38jx3635yrdx6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_568049_ub38jx3635yrdx6r.svg#iconfont') format('svg');
+}
+
+/*定义使用iconfont的样式*/
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*页面初始化*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	color: #000000;background:#fff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0 none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul,ol,li{
+	list-style: none;
+	list-style-position: outside;
+}
+
+li {
+	list-style: none outside none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: "";
+}
+
+abbr,
+acronym {
+	border: 0 none;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+input,
+textarea,
+select {}
+
+legend {
+	color: #000000;
+}
+
+body {
+	font: 13px/1.231 arial, helvetica, clean, sans-serif;background:#fff;
+}
+
+select,
+input,
+button,
+textarea {
+	font: 99% arial, helvetica, clean, sans-serif;
+}
+
+table {
+	font-size: inherit;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family: monospace;
+	line-height: 100%;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+
+p,span,em,strong{
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+fieldset, img{
+	border: 0;
+	margin: 0;
+}
+
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;height:0;}
+.clearfix{*zoom:1;}
+table {border-collapse:collapse;border-spacing:0;}
+table td{word-wrap:break-word;word-break:break-all;}
