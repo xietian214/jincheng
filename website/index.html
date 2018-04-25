@@ -27,7 +27,9 @@
     </div>
     <div class="nav">
         <div class="w1190 clearfix">
-            <a href="" title="锦程国旅" class="fl"><img src="images/logo.png" class="logo" /></a>
+            <a href="" title="锦程国旅" class="fl">
+                <img src="images/logo.png" class="logo" />
+            </a>
             <ul class="fr clearfix navul">
                 <li>
                     <a href="">首页</a>
@@ -59,18 +61,26 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href=""><img src="images/banner01.jpg" class="pic" /></a>
+                    <a href="">
+                        <img src="images/banner01.jpg" class="pic" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href=""><img src="images/banner01.jpg" class="pic" /></a>
+                    <a href="">
+                        <img src="images/banner01.jpg" class="pic" />
+                    </a>
                 </div>
             </div>
             <div class="pagination"></div>
         </div>
         <div class="index_seach">
             <div class="w1190 clearfix">
-                <div class="startpoint"><input type="text" name="" value="" placeholder="出发地：北京" /></div>
-                <div class="endpoint"><input type="text" name="" value="" placeholder="目的地：" /></div>
+                <div class="startpoint">
+                    <input type="text" name="" value="" placeholder="出发地：北京" />
+                </div>
+                <div class="endpoint">
+                    <input type="text" name="" value="" placeholder="目的地：" />
+                </div>
             </div>
         </div>
     </div>
@@ -83,28 +93,36 @@
             <div class="accordion">
                 <ul class="clearfix">
                     <li>
-                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <a href="" class="fl" title="">
+                            <img src="images/img01.jpg" alt="" />
+                        </a>
                         <div class="fl">
                             <img src="images/img01_s.jpg" />
                             <span>意大利 + 希腊异域风情13日自由订制</span>
                         </div>
                     </li>
                     <li>
-                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <a href="" class="fl" title="">
+                            <img src="images/img01.jpg" alt="" />
+                        </a>
                         <div class="fl">
                             <img src="images/img02_s.jpg" />
                             <span>澳新（海陆空）12天昆明起止全国联运</span>
                         </div>
                     </li>
                     <li>
-                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <a href="" class="fl" title="">
+                            <img src="images/img01.jpg" alt="" />
+                        </a>
                         <div class="fl">
                             <img src="images/img03_s.jpg" />
                             <span>美国东西海岸 + 夏威夷全景14天自由订制</span>
                         </div>
                     </li>
                     <li>
-                        <a href="" class="fl" title=""><img src="images/img01.jpg" alt="" /></a>
+                        <a href="" class="fl" title="">
+                            <img src="images/img01.jpg" alt="" />
+                        </a>
                         <div class="fl">
                             <img src="images/img04_s.jpg" />
                             <span>澳新凯【千礁百魅】11日长沙起多省联运</span>
@@ -118,8 +136,61 @@
         <div class="w1190">
             <div class="index_title">
                 <div>定制产品精选</div>
-                <p>Custom product selection</p>
+                <p>CUSTOM PRODUCT SELECTION</p>
             </div>
+            <ul class="clearfix product_select">
+                <li>
+                    <a href="">
+                        <img src="images/img05.jpg" />
+                        <div>美洲</div>
+                        <p>AMERICA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img06.jpg" />
+                        <div>中东非</div>
+                        <p>AFRICA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img07.jpg" />
+                        <div>大洋洲</div>
+                        <p>OCEANIA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img08.jpg" />
+                        <div>日本</div>
+                        <p>JAPAN</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/img05.jpg" />
+                        <div>欧洲</div>
+                        <p>EUROPE</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content03">
+        <div class="banner_small">
+            <a href="">
+                <img src="images/banner_img.jpg" />
+            </a>
+        </div>
+    </div>
+    <div class="content04">
+        <div class="w1190">
+            <div class="index_title">
+                <div>热门景点介绍</div>
+                <p>INTRODUCTION TO POPULAR ATTRACTIONS</p>
+            </div>
+            <div></div>
         </div>
     </div>
 </body>
@@ -138,7 +209,7 @@
         noSwiping: true
     });
     //accordion手风琴
-    $(".accordion ul li").hover(function() {
+    $(".accordion ul li").hover(function () {
         $(this).stop(true).animate({
             width: "1008px"
         }, 1000).siblings().stop(true).animate({
