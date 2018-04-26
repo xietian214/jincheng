@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- header begin -->
     <div class="header">
         <div class="w1190 clearfix">
             <span class="fl">欢迎来到锦程国旅官方网站</span>
@@ -26,6 +27,8 @@
             <span class="fr">官方服务热线：400-0033-010</span>
         </div>
     </div>
+    <!-- header end -->
+    <!-- nav begin -->
     <div class="nav">
         <div class="w1190 clearfix">
             <a href="" title="锦程国旅" class="fl">
@@ -36,10 +39,19 @@
                     <a href="">首页</a>
                 </li>
                 <li>
-                    <a href="">省心跟团游<i class="iconfont">&#xe941;</i></a>
+                    <span>省心跟团游<i class="iconfont">&#xe941;</i></span>
+                    <ul class="s_nav">
+                        <li><a href="">澳新跟团游</a></li>
+                        <li><a href="">欧洲跟团游</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="">自由行<i class="iconfont">&#xe941;</i></a>
+                    <span>自由行<i class="iconfont">&#xe941;</i></span>
+                    <ul class="s_nav">
+                        <li><a href="">特价机票</a></li>
+                        <li><a href="">境外酒店</a></li>
+                        <li><a href="">澳新包车</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="">私人订制</a>
@@ -51,14 +63,16 @@
                     <a href="">机票预订</a>
                 </li>
                 <li>
-                    <a href="" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
+                    <a href="javascript:;" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
                 </li>
             </ul>
         </div>
     </div>
+    <!-- nav end -->
+    <!-- banner begin -->
     <div class="index_swiper">
         <a class="arrow-left" href="javascript:;"><i class="iconfont">&#xe61a;</i></a>
-        <a class="arrow-right" href="javascript:;"><i class="iconfont">&#xe600;</i></a>        
+        <a class="arrow-right" href="javascript:;"><i class="iconfont">&#xe600;</i></a>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -87,9 +101,11 @@
             </div>
         </div>
     </div>
+    <!-- banner end -->
+    <!-- 当季热门推荐 begin -->
     <div class="content01">
         <ul class="sidenav">
-            <li class="wechat"><i class="iconfont">&#xe628;</i><img src="images/wechatcode1.png" class="wechatcode"/></li>
+            <li class="wechat"><i class="iconfont">&#xe628;</i><img src="images/wechatcode1.png" class="wechatcode" /></li>
             <li><i class="iconfont">&#xe64c;</i></li>
             <li><i class="iconfont">&#xe62c;</i></li>
         </ul>
@@ -140,6 +156,8 @@
             </div>
         </div>
     </div>
+    <!-- 当季热门推荐 end -->
+    <!-- 定制产品精选 begin -->
     <div class="content02">
         <div class="w1190">
             <div class="index_title">
@@ -195,6 +213,8 @@
             </ul>
         </div>
     </div>
+    <!-- 定制产品精选 end -->
+    <!-- 中心大图 begin -->
     <div class="content03">
         <div class="banner_small">
             <a href="">
@@ -202,6 +222,8 @@
             </a>
         </div>
     </div>
+    <!-- 中心大图 end -->
+    <!-- 热门景点介绍 begin -->
     <div class="content04">
         <div class="w1190">
             <div class="index_title">
@@ -236,7 +258,8 @@
             </div>
         </div>
     </div>
-    <!-- footer -->
+    <!-- 热门景点介绍 end -->
+    <!-- footer begin -->
     <div class="footer">
         <div class="w1190">
             <div class="clearfix pt30">
@@ -264,11 +287,23 @@
             <p class="pt">京ICP备17062022号</p>
         </div>
     </div>
+    <!-- footer end -->
 </body>
 
 </html>
 <script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/idangerous.swiper.min.js"></script>
+<script src="js/global.js"></script>
 <script>
+    // sidenav测导航
+    var h_con1 = $('.content01').position().top;
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+        if (scrollTop >= h_con1) {
+            $('.sidenav').addClass('fixed');
+        } else {
+            $('.sidenav').removeClass('fixed');
+        };
+    });
     // banner大图
     var mySwiper = new Swiper(".swiper-container", {
         pagination: ".pagination",
@@ -278,6 +313,20 @@
         autoplayDisableOnInteraction: false,
         loop: true,
         noSwiping: true
+    });
+    $('.index_swiper .arrow-left').on('click', function(e) {
+        e.preventDefault()
+        mySwiper.swipePrev();
+    });
+    $('.index_swiper .arrow-right').on('click', function(e) {
+        e.preventDefault()
+        mySwiper.swipeNext();
+    });
+    $('.index_swiper').on("mouseenter", function() {
+        mySwiper.stopAutoplay();
+    });
+    $('.index_swiper').on("mouseleave", function() {
+        mySwiper.startAutoplay();
     });
     //accordion手风琴
     $(".accordion ul li").hover(function() {
@@ -310,12 +359,13 @@
 
     //热门景点介绍
     addPic($('.picwall>ul>li').eq(0));
+
     function addPic(obj) {
         $('.picwall ul li .desc').remove();
         var _descdiv = obj.find('.s_img');
         var _deschtml = '<a href="' + _descdiv.attr("data-href") + '" title="' + _descdiv.attr("data-title") + '" class="desc"><img src="' + _descdiv.attr("data-img") + '" class="m_img" /><div><h6>' + _descdiv.attr("data-title") + '</h6><p>' + _descdiv.attr("data-desc") + '</p></div></a>';
         obj.append(_deschtml);
-    }
+    };
     $('.picwall ul li').on('mouseenter', function() {
         if ($(this).parent('ul').width() == 205) {
             $(this).parent('ul').stop(true).animate({
@@ -325,11 +375,5 @@
             }, 200);
         }
         addPic($(this));
-    })
-    // 微信二维码
-    $('.wechat').hover(function(){
-        $(this).find('.wechatcode').show();
-    },function(){
-        $(this).find('.wechatcode').hide();
-    })
+    });
 </script>
