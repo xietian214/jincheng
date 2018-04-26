@@ -36,10 +36,10 @@
                     <a href="">首页</a>
                 </li>
                 <li>
-                    <a href="">省心跟团游</a>
+                    <a href="">省心跟团游<i class="iconfont">&#xe941;</i></a>
                 </li>
                 <li>
-                    <a href="">自由行</a>
+                    <a href="">自由行<i class="iconfont">&#xe941;</i></a>
                 </li>
                 <li>
                     <a href="">私人订制</a>
@@ -51,14 +51,14 @@
                     <a href="">机票预订</a>
                 </li>
                 <li>
-                    <a href="">商务合作</a>
+                    <a href="" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
                 </li>
             </ul>
         </div>
     </div>
     <div class="index_swiper">
         <a class="arrow-left" href="javascript:;"><i class="iconfont">&#xe61a;</i></a>
-        <a class="arrow-right" href="javascript:;"><i class="iconfont">&#xe600;</i></a>
+        <a class="arrow-right" href="javascript:;"><i class="iconfont">&#xe600;</i></a>        
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -78,14 +78,21 @@
             <div class="w1190 clearfix">
                 <div class="startpoint">
                     <input type="text" name="" value="" placeholder="出发地：北京" />
+                    <i class="iconfont downicon">&#xe941;</i>
                 </div>
                 <div class="endpoint">
                     <input type="text" name="" value="" placeholder="目的地：" />
+                    <i class="iconfont searchicon">&#xe697;</i>
                 </div>
             </div>
         </div>
     </div>
     <div class="content01">
+        <ul class="sidenav">
+            <li class="wechat"><i class="iconfont">&#xe628;</i><img src="images/wechatcode1.png" class="wechatcode"/></li>
+            <li><i class="iconfont">&#xe64c;</i></li>
+            <li><i class="iconfont">&#xe62c;</i></li>
+        </ul>
         <div class="w1190">
             <div class="index_title">
                 <div>当季热门推荐</div>
@@ -301,9 +308,8 @@
         }, 300);
     });
 
-    //accordion手风琴
+    //热门景点介绍
     addPic($('.picwall>ul>li').eq(0));
-
     function addPic(obj) {
         $('.picwall ul li .desc').remove();
         var _descdiv = obj.find('.s_img');
@@ -319,5 +325,11 @@
             }, 200);
         }
         addPic($(this));
+    })
+    // 微信二维码
+    $('.wechat').hover(function(){
+        $(this).find('.wechatcode').show();
+    },function(){
+        $(this).find('.wechatcode').hide();
     })
 </script>
