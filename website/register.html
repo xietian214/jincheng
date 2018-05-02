@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
+    <link href="css/base.css" rel="stylesheet">
+    <script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/jquery-1.8.3.min.js"></script>
+    <link href="css/layout.css" rel="stylesheet">
+    <script src=""></script>
+    <title>锦程旅游</title>
+</head>
+
+<body>
+    <!-- header begin -->
+    <div class="header">
+        <div class="w1190 clearfix">
+            <span class="fl">欢迎来到锦程国旅官方网站</span>
+            <a href="" class="fr">注册</a>
+            <i class="fr entryline">|</i>
+            <a href="" class="fr">登录</a>
+            <a href="" class="fr about">关于锦程国旅</a>
+            <span class="fr">官方服务热线：400-0033-010</span>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- nav begin -->
+    <div class="nav">
+        <div class="w1190 clearfix">
+            <a href="" title="锦程国旅" class="fl">
+                <img src="images/logo.png" class="logo" />
+            </a>
+            <ul class="fr clearfix navul">
+                <li>
+                    <a href="">首页</a>
+                </li>
+                <li>
+                    <span>省心跟团游<i class="iconfont">&#xe941;</i></span>
+                    <ul class="s_nav">
+                        <li><a href="">澳新跟团游</a></li>
+                        <li><a href="">欧洲跟团游</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>自由行<i class="iconfont">&#xe941;</i></span>
+                    <ul class="s_nav">
+                        <li><a href="">特价机票</a></li>
+                        <li><a href="">境外酒店</a></li>
+                        <li><a href="">澳新包车</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">私人订制</a>
+                </li>
+                <li>
+                    <a href="">签证办理</a>
+                </li>
+                <li>
+                    <a href="">机票预订</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav end -->
+    <!-- 注册 begin -->
+    <div class="login_center">
+        <img src="images/login_bg.jpg" class="pic" />
+        <div class="login_box">
+            <h6>新账号注册</h6>
+            <div class="w336">
+                <div class="phone clearfix">
+                    <span>+86</span>
+                    <input type="text" name="phone" value="" />
+                </div>
+                <div class="drag-out">
+                    <span>拖动校验</span>
+                    <div class="drag-area">》</div>
+                    <div class="drag-code"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 注册 end -->
+    <!-- footer begin -->
+    <div class="footer">
+        <div class="w1190">
+            <div class="clearfix pt30">
+                <a href=""><img src="images/logo_bottom.png" class="logo fl" /></a>
+                <div class="fl dv1">
+                    <a href="" target="_blank">关于我们</a>
+                    <a href="" target="_blank">联系我们</a>
+                    <a href="" target="_blank">友情链接</a>
+                </div>
+                <div class="fl dv2">
+                    <a href="" target="_blank">使用条款</a>
+                    <a href="" target="_blank">旅游资质</a>
+                </div>
+                <div class="fl dv3">
+
+                    <a href="" target="_blank">付款方式</a>
+                    <a href="" target="_blank">隐私版权声明</a>
+                </div>
+                <div class="fl dv4">
+                    <p>唯一官方电话：400-0033-010</p>
+                    <p>工作时间：周一至周五 09:00 - 18:00</p>
+                </div>
+            </div>
+            <p class="pt">Copyright ©2017 锦程国旅 版权所有 旅游经营许可证：L-BJ-CJ00676</p>
+            <p class="pt">京ICP备17062022号</p>
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+
+</html>
+<script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/idangerous.swiper.min.js"></script>
+<script src="js/global.js"></script>
+<script>
+    // 滑动验证
+    var dragFun = function() {
+        var maxWidth; //可拖动最大距离
+        var move = false; //设置拖动区域是否可以拖动
+        var leftArae;
+        //鼠标按下事件
+        var dragOut = $(".drag-out");
+        var dragArea = $(".drag-out .drag-area");
+        var dragCode = $(".drag-out .drag-code");
+        dragArea.mousedown(function() {
+                move = true;
+                maxWidth = dragOut.width() - dragArea.width(); //可以移动的最大距离
+                leftArae = parseInt(dragOut.offset().left); //距离左边的距离
+            })
+            //鼠标拖动事件
+        $(document).mousemove(function(e) {
+            movePx = e.pageX - leftArae;
+            if (move == true) {
+                if (movePx > 0 && movePx <= maxWidth) {
+                    dragArea.css({
+                        "left": movePx
+                    });
+                    dragCode.css({
+                        "width": movePx
+                    });
+                } else if (movePx > maxWidth) {
+                    dragArea.unbind("mousedown");
+                    $(document).unbind("mousemove");
+                    $(document).unbind("mouseup");
+                    dragOut.find("span").html("通过验证").css({
+                        "color": "#fff"
+                    })
+                    dragArea.html("✔");
+                }
+            }
+        })
+        $(document).mouseup(function() { //鼠标离开事件
+            if (move == true) {
+                move = false;
+                if (maxWidth > movePx) {
+                    dragArea.css({
+                        "left": 0
+                    });
+                    dragCode.css({
+                        "width": 0
+                    });
+                }
+            }
+        })
+    }
+
+    $(function() {
+        var drag = dragFun();
+        $(".drag-area").drag;
+    })
+</script>
