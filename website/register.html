@@ -73,17 +73,45 @@
         <img src="images/login_bg.jpg" class="pic" />
         <div class="login_box">
             <h6>新账号注册</h6>
-            <div class="w336">
-                <div class="phone clearfix">
+            <form class="w336">
+                <div class="phone clearfix text-style">
                     <span>+86</span>
                     <input type="text" name="phone" value="" />
                 </div>
+                <div class="form-tip promipt">该手机号已经注册 你可以<a href="">直接登录</a></div>
                 <div class="drag-out">
                     <span>拖动校验</span>
-                    <div class="drag-area">》</div>
+                    <div class="drag-area"></div>
                     <div class="drag-code"></div>
                 </div>
-            </div>
+                <div class="clearfix">
+                    <input type="text" name="phoneCode" autocomplete="off" id="vericode" placeholder="验证码" class="verification-code">
+                    <input type="button" value="发送验证码" name="" id="veribtn" class="sendcode">
+                    <span class="no-ver-code">未收到验证码?</span>
+                    <span class="form-tip errorcode">验证码不正确</span>
+                </div>
+                <div class="parent-input-box">
+                    <input type="password" autocomplete="off" name="password" id="password" placeholder="6-20位密码，字母/数字/符号至少2种" class="text-style password-code">
+                    <i class="eye-icon"></i>
+                    <span class="form-tip">
+                    <!-- <span class="intensity"><i class="intencolor">弱</i><i>中</i><i>强</i></span> -->
+                    </span>
+                </div>
+                <div class="checkbox-wrap">
+                    <label class="label-checkbox">
+                        <input type="checkbox" name="autolog" checked="" id="Useragreement" class="check-c">我已阅读并接受<a href="" target="_blank" class="main-link-color">用户协议</a>
+                    </label>
+                </div>
+                <div class="passcard-btns">
+                    <input type="submit" value="注册" disabled="" class="passcard-btn">
+                </div>
+                <div class="third-party-covers">
+                    <span class="p-666">使用社交帐号注册</span>
+                    <div class="pass-account-covers">
+                        <a href="" class="p-wechat-login"></a>
+                    </div>
+                </div>
+            </form>
 
         </div>
     </div>

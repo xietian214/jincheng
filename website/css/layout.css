@@ -1,6 +1,30 @@
 /* public */
 
 
+/* text */
+
+.text-style {
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #666666;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    background: #f4f4f4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.form-tip {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
 /* swiper */
 
 .swiper-container {
@@ -756,11 +780,11 @@
 }
 
 .drag-out {
-    width: 300px;
+    width: 336px;
     margin: 50px auto;
     position: relative;
-    height: 35px;
-    line-height: 35px;
+    height: 34px;
+    line-height: 34px;
     background-color: #DDDDDD;
     text-align: center;
     user-select: none;
@@ -773,7 +797,7 @@
 
 .drag-area {
     position: absolute;
-    height: 33px;
+    height: 32px;
     border: 1px solid #CCCCCC;
     width: 50px;
     top: 0;
@@ -791,4 +815,67 @@
     left: 0;
     top: 0;
     background-color: #3be288;
+}
+
+.promipt {
+    color: #666;
+}
+
+.promipt a {
+    color: #f75234;
+}
+
+.verification-code {
+    width: 120px;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #666666;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    background: #f4f4f4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.sendcode {
+    padding: 0 14px;
+    height: 42px;
+    font-size: 14px;
+    color: #444444;
+    background: #ffe366;
+    border: 1px solid #ffe366;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.errorcode {
+    color: #f75234;
+    display: block;
+}
+
+.password-code {
+    padding-right: 40px;
+    width: 336px;
+}
+
+.eye-icon {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    cursor: pointer;
+    background-position: center;
+    background-image: url(../images/vericodeicon.png);
+    background-repeat: no-repeat;
+    background: red;
 }
