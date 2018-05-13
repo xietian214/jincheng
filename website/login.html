@@ -69,14 +69,46 @@
             </div>
         </div>
         <!-- nav end -->
-        <!-- 私人订制 begin -->
-        <div class="Personaltailor">
-            <div>
-                <a href="" class="al" title="私人订制"></a>
-                <a href="" class="ar" title="企业定制"></a>
+        <!-- 登录 begin -->
+        <div class="login_center">
+            <img src="images/login_bg.jpg" class="pic" />
+            <div class="login_box">
+                <h6>新账号注册</h6>
+                <form class="w336">
+                    <div class="text-style js-err">
+                        <i class="iconfont">&#xe6e2;</i>请输入验证码
+                    </div>
+                    <div class="login_ink">
+                        <input type="text" autocomplete="off" name="name" placeholder="手机号/邮箱" class="text-style">
+                    </div>
+                    <div class="login_ink">
+                        <input type="password" autocomplete="off" name="password" id="password" placeholder="密码" class="text-style password-code">
+                    </div>
+                    <div class="proofcode clearfix" style="display: block;">
+                        <input type="text" class="text-style" value="">
+                        <img src="./images/loginRandomImg.jpg" width="180" height="44" alt="">
+                        <i class="fr iconfont">&#xe640;</i>
+                    </div>
+                    <div class="passcard-btns">
+                        <input type="submit" value="登录" disabled="" class="login_btn">
+                    </div>
+                    <div class="checkbox-wrap clearfix">
+                        <label class="label-checkbox">
+                            <input type="checkbox" name="autolog" checked="" id="Useragreement" class="check-c">下次自动登录
+                        </label>
+                        <a href="" class="fr fr_a">注册</a>
+                        <span class="fr fr_a">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <a href="" class="fr fr_a">忘记密码</a>
+                    </div>
+                    <div class="third-party-covers login_third_party_covers">
+                        <div class="font">第三方登录账号</div>
+                        <a href="" class="p-wechat-login iconfont">&#xe652;</a>
+                    </div>
+                </form>
+
             </div>
         </div>
-        <!-- 私人订制 end -->
+        <!-- 登录 end -->
         <!-- footer begin -->
         <div class="footer">
             <div class="w1190">
@@ -111,3 +143,13 @@
 
 </html>
 <script src="js/global.js"></script>
+<script>
+    //阅读用户协议
+    $('#Useragreement').on('click', function() {
+        if ($(this).prop('checked')) { //获取是否选中 并判断
+            $(this).parent('.label-checkbox').removeClass('label-checkbox1')
+        } else {
+            $(this).parent('.label-checkbox').addClass('label-checkbox1')
+        }
+    });
+</script>

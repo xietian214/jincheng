@@ -8,147 +8,147 @@
     <meta name="keywords" content="">
     <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
     <link href="css/base.css" rel="stylesheet">
-    <script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/jquery-1.8.3.min.js"></script>
+    <script src="js/lib/jquery-1.8.3.min.js"></script>
     <link href="css/layout.css" rel="stylesheet">
-    <script src=""></script>
     <title>锦程旅游</title>
 </head>
 
 <body>
-    <!-- header begin -->
-    <div class="header">
-        <div class="w1190 clearfix">
-            <span class="fl">欢迎来到锦程国旅官方网站</span>
-            <a href="" class="fr">注册</a>
-            <i class="fr entryline">|</i>
-            <a href="" class="fr">登录</a>
-            <a href="" class="fr about">关于锦程国旅</a>
-            <span class="fr">官方服务热线：400-0033-010</span>
+    <div class="wrapper">
+        <!-- header begin -->
+        <div class="header">
+            <div class="w1190 clearfix">
+                <span class="fl">欢迎来到锦程国旅官方网站</span>
+                <a href="./register.html" class="fr">注册</a>
+                <i class="fr entryline">|</i>
+                <a href="./login.html" class="fr">登录</a>
+                <a href="" class="fr about">关于锦程国旅</a>
+                <span class="fr">官方服务热线：400-0033-010</span>
+            </div>
         </div>
-    </div>
-    <!-- head end -->
-    <!-- nav begin -->
-    <div class="nav">
-        <div class="w1190 clearfix">
-            <a href="" title="锦程国旅" class="fl">
-                <img src="images/logo.png" class="logo" />
-            </a>
-            <ul class="fr clearfix navul">
-                <li>
-                    <a href="">首页</a>
-                </li>
-                <li>
-                    <span>省心跟团游<i class="iconfont">&#xe941;</i></span>
-                    <ul class="s_nav">
-                        <li><a href="">澳新跟团游</a></li>
-                        <li><a href="">欧洲跟团游</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <span>自由行<i class="iconfont">&#xe941;</i></span>
-                    <ul class="s_nav">
-                        <li><a href="">特价机票</a></li>
-                        <li><a href="">境外酒店</a></li>
-                        <li><a href="">澳新包车</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">私人订制</a>
-                </li>
-                <li>
-                    <a href="">签证办理</a>
-                </li>
-                <li>
-                    <a href="">机票预订</a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
-                </li>
-            </ul>
+        <!-- header end -->
+        <!-- nav begin -->
+        <div class="nav">
+            <div class="w1190 clearfix">
+                <a href="./index.html" title="锦程国旅" class="fl">
+                    <img src="images/logo.png" class="logo" />
+                </a>
+                <ul class="fr clearfix navul">
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li>
+                        <span>省心跟团游<i class="iconfont">&#xe941;</i></span>
+                        <ul class="s_nav">
+                            <li><a href="./aoxinGroup.html">澳新跟团游</a></li>
+                            <li><a href="">欧洲跟团游</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>自由行<i class="iconfont">&#xe941;</i></span>
+                        <ul class="s_nav">
+                            <li><a href="">特价机票</a></li>
+                            <li><a href="">境外酒店</a></li>
+                            <li><a href="">澳新包车</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./PersonalTailor.html">私人订制</a>
+                    </li>
+                    <li>
+                        <a href="./visa.html">签证办理</a>
+                    </li>
+                    <li>
+                        <a href="./orderPlane.html">机票预订</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- nav end -->
-    <!-- 注册 begin -->
-    <div class="login_center">
-        <img src="images/login_bg.jpg" class="pic" />
-        <div class="login_box">
-            <h6>新账号注册</h6>
-            <form class="w336">
-                <div class="phone clearfix text-style">
-                    <span>+86</span>
-                    <input type="text" name="phone" value="" />
-                </div>
-                <div class="form-tip promipt">该手机号已经注册 你可以<a href="">直接登录</a></div>
-                <div class="drag-out">
-                    <span>拖动校验</span>
-                    <div class="drag-area"></div>
-                    <div class="drag-code"></div>
-                </div>
-                <div class="clearfix">
-                    <input type="text" name="phoneCode" autocomplete="off" id="vericode" placeholder="验证码" class="verification-code">
-                    <input type="button" value="发送验证码" name="" id="veribtn" class="sendcode">
-                    <span class="no-ver-code">未收到验证码?</span>
-                    <span class="form-tip errorcode">验证码不正确</span>
-                </div>
-                <div class="parent-input-box">
-                    <input type="password" autocomplete="off" name="password" id="password" placeholder="6-20位密码，字母/数字/符号至少2种" class="text-style password-code">
-                    <i class="eye-icon"></i>
-                    <span class="form-tip">
+        <!-- nav end -->
+        <!-- 注册 begin -->
+        <div class="login_center">
+            <img src="images/login_bg.jpg" class="pic" />
+            <div class="login_box">
+                <h6>新账号注册</h6>
+                <form class="w336">
+                    <div class="phone clearfix text-style">
+                        <span>+86</span>
+                        <input type="text" name="phone" placeholder="手机号" value="" />
+                    </div>
+                    <div class="form-tip promipt">该手机号已经注册 你可以<a href="">直接登录</a></div>
+                    <div class="drag-out">
+                        <span>请按住滑块，拖动到最右侧</span>
+                        <div class="drag-area"><i class="iconfont" style="color:#737383;font-size:14px;">&#xe642;</i></div>
+                        <div class="drag-code"></div>
+                    </div>
+                    <div class="clearfix">
+                        <input type="text" name="phoneCode" autocomplete="off" id="vericode" placeholder="验证码" class="verification-code">
+                        <input type="button" value="发送验证码" name="" id="veribtn" class="sendcode">
+                        <span class="no-ver-code">未收到验证码?</span>
+                        <span class="form-tip errorcode">验证码不正确</span>
+                    </div>
+                    <div class="parent-input-box">
+                        <input type="password" autocomplete="off" name="password" id="password" placeholder="6-20位密码，字母/数字/符号至少2种" class="text-style password-code">
+                        <i class="iconfont eye-icon">&#xe723;</i>
+                        <span class="form-tip">
                     <!-- <span class="intensity"><i class="intencolor">弱</i><i>中</i><i>强</i></span> -->
-                    </span>
-                </div>
-                <div class="checkbox-wrap">
-                    <label class="label-checkbox">
+                        </span>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <label class="label-checkbox">
                         <input type="checkbox" name="autolog" checked="" id="Useragreement" class="check-c">我已阅读并接受<a href="" target="_blank" class="main-link-color">用户协议</a>
                     </label>
-                </div>
-                <div class="passcard-btns">
-                    <input type="submit" value="注册" disabled="" class="passcard-btn">
-                </div>
-                <div class="third-party-covers">
-                    <span class="p-666">使用社交帐号注册</span>
-                    <div class="pass-account-covers">
-                        <a href="" class="p-wechat-login"></a>
+                    </div>
+                    <div class="passcard-btns">
+                        <input type="submit" value="注册" disabled="" class="passcard-btn">
+                    </div>
+                    <div class="third-party-covers clearfix">
+                        <span class="p-666">使用社交帐号注册</span>
+                        <div class="pass-account-covers">
+                            <a href="" class="p-wechat-login iconfont">&#xe652;</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- 注册 end -->
+        <!-- footer begin -->
+        <div class="footer">
+            <div class="w1190">
+                <div class="clearfix pt30">
+                    <a href=""><img src="images/logo_bottom.png" class="logo fl" /></a>
+                    <div class="fl dv1">
+                        <a href="" target="_blank">关于我们</a>
+                        <a href="" target="_blank">联系我们</a>
+                        <a href="" target="_blank">友情链接</a>
+                    </div>
+                    <div class="fl dv2">
+                        <a href="" target="_blank">使用条款</a>
+                        <a href="" target="_blank">旅游资质</a>
+                    </div>
+                    <div class="fl dv3">
+
+                        <a href="" target="_blank">付款方式</a>
+                        <a href="" target="_blank">隐私版权声明</a>
+                    </div>
+                    <div class="fl dv4">
+                        <p>唯一官方电话：400-0033-010</p>
+                        <p>工作时间：周一至周五 09:00 - 18:00</p>
                     </div>
                 </div>
-            </form>
-
-        </div>
-    </div>
-    <!-- 注册 end -->
-    <!-- footer begin -->
-    <div class="footer">
-        <div class="w1190">
-            <div class="clearfix pt30">
-                <a href=""><img src="images/logo_bottom.png" class="logo fl" /></a>
-                <div class="fl dv1">
-                    <a href="" target="_blank">关于我们</a>
-                    <a href="" target="_blank">联系我们</a>
-                    <a href="" target="_blank">友情链接</a>
-                </div>
-                <div class="fl dv2">
-                    <a href="" target="_blank">使用条款</a>
-                    <a href="" target="_blank">旅游资质</a>
-                </div>
-                <div class="fl dv3">
-
-                    <a href="" target="_blank">付款方式</a>
-                    <a href="" target="_blank">隐私版权声明</a>
-                </div>
-                <div class="fl dv4">
-                    <p>唯一官方电话：400-0033-010</p>
-                    <p>工作时间：周一至周五 09:00 - 18:00</p>
-                </div>
+                <p class="pt">Copyright ©2017 锦程国旅 版权所有 旅游经营许可证：L-BJ-CJ00676</p>
+                <p class="pt">京ICP备17062022号</p>
             </div>
-            <p class="pt">Copyright ©2017 锦程国旅 版权所有 旅游经营许可证：L-BJ-CJ00676</p>
-            <p class="pt">京ICP备17062022号</p>
         </div>
+        <!-- footer end -->
     </div>
-    <!-- footer end -->
 </body>
 
 </html>
-<script src="http://www.jia360.com/themes/simplebootx/Public/pc/js/lib/idangerous.swiper.min.js"></script>
 <script src="js/global.js"></script>
 <script>
     // 滑动验证
@@ -180,10 +180,10 @@
                     dragArea.unbind("mousedown");
                     $(document).unbind("mousemove");
                     $(document).unbind("mouseup");
-                    dragOut.find("span").html("通过验证").css({
+                    dragOut.find("span").html("验证通过").css({
                         "color": "#fff"
                     })
-                    dragArea.html("✔");
+                    dragArea.html('<i class="iconfont">&#xe725;</i>');
                 }
             }
         })
@@ -205,5 +205,24 @@
     $(function() {
         var drag = dragFun();
         $(".drag-area").drag;
+    });
+    //阅读用户协议
+    $('#Useragreement').on('click', function() {
+        if ($(this).prop('checked')) { //获取是否选中 并判断
+            $(this).parent('.label-checkbox').removeClass('label-checkbox1')
+        } else {
+            $(this).parent('.label-checkbox').addClass('label-checkbox1')
+        }
+    });
+    // 密码可见
+    $('.eye-icon').on('click', function() {
+        var _intype = $(this).siblings('.password-code').attr('type');
+        if (_intype == 'password') {
+            $(this).html('&#xe6b9;');
+            document.getElementById('password').type = "text";
+        } else {
+            $(this).html('&#xe723;');
+            document.getElementById('password').type = 'password';
+        }
     })
 </script>

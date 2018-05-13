@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- <link rel="icon" href="images/txjj_ico.ico"> -->
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/lib/jquery-1.8.3.min.js"></script>
+    <link href="css/layout.css" rel="stylesheet">
+    <title>锦程旅游</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header begin -->
+        <div class="header">
+            <div class="w1190 clearfix">
+                <span class="fl">欢迎来到锦程国旅官方网站</span>
+                <a href="./register.html" class="fr">注册</a>
+                <i class="fr entryline">|</i>
+                <a href="./login.html" class="fr">登录</a>
+                <a href="" class="fr about">关于锦程国旅</a>
+                <span class="fr">官方服务热线：400-0033-010</span>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- nav begin -->
+        <div class="nav">
+            <div class="w1190 clearfix">
+                <a href="./index.html" title="锦程国旅" class="fl">
+                    <img src="images/logo.png" class="logo" />
+                </a>
+                <ul class="fr clearfix navul">
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li>
+                        <span>省心跟团游<i class="iconfont">&#xe941;</i></span>
+                        <ul class="s_nav">
+                            <li><a href="./aoxinGroup.html">澳新跟团游</a></li>
+                            <li><a href="">欧洲跟团游</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>自由行<i class="iconfont">&#xe941;</i></span>
+                        <ul class="s_nav">
+                            <li><a href="">特价机票</a></li>
+                            <li><a href="">境外酒店</a></li>
+                            <li><a href="">澳新包车</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./PersonalTailor.html">私人订制</a>
+                    </li>
+                    <li>
+                        <a href="./visa.html">签证办理</a>
+                    </li>
+                    <li>
+                        <a href="./orderPlane.html">机票预订</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="wechat">商务合作<i class="iconfont">&#xe941;</i><img src="images/wechatcode.png" class="wechatcode"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav end -->
+        <!-- 机票预订 begin -->
+        <div class="order_center">
+            <div class="order_box">
+                <ul class="order_tabul order_choose_outin clearfix">
+                    <li class="active">国内机票</li>
+                    <li>国际机票</li>
+                </ul>
+                <div class="order_cont">
+                    <div class="order_list">
+                        <ul class="order_tabul order_choose_onlydouble clearfix">
+                            <li class="active">
+                                <i class="iconfont icon1">&#xe635;</i>
+                                <i class="iconfont icon2">&#xe627;</i>
+                                <span>单程</span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon1">&#xe635;</i>
+                                <i class="iconfont icon2">&#xe627;</i>
+                                <span>往返</span>
+                            </li>
+                            <li>
+                                <i class="iconfont icon1">&#xe635;</i>
+                                <i class="iconfont icon2">&#xe627;</i>
+                                <span>多程</span>
+                            </li>
+                        </ul>
+                        <div class="order_cont">
+                            <!-- 单程 -->
+                            <div class="order_list">
+                                <div class="search-form">
+                                    <div class="formline search-city start-city">
+                                        <em class="icon-homecity"><i class="iconfont">&#xe669;</i></em>
+                                        <i>出发地</i>
+                                        <div class="city-suggest">
+                                            <input type="text" class="loacal w300" placeholder="城市/机场" value="">
+                                        </div>
+                                        <span class="icon-toggle"><i class="iconfont">&#xe6a0;</i></span>
+                                    </div>
+                                    <div class="formline search-city end-city">
+                                        <em class="icon-destcity"><i class="iconfont">&#xe621;</i></em>
+                                        <i>到达地</i>
+                                        <div class="city-suggest">
+                                            <input type="text" class="loacal w300" placeholder="城市/机场" value="">
+                                        </div>
+                                        <s class="ico-time"></s>
+                                    </div>
+                                    <div class="formline start-day">
+                                        <em class="icon-ddate"><i class="iconfont">&#xe6af;</i></em>
+                                        <i>出发日期</i>
+                                        <div class=""><input type="text" value="" placeholder="请选择出发日期" class="w300" readonly=""></div>
+                                    </div>
+                                    <div class="formline end-day">
+                                        <em class="icon-adate"><i class="iconfont">&#xe6ae;</i></em>
+                                        <i>返回日期</i>
+                                        <div class=""><input type="text" value="" placeholder="请选择返回日期" class="w300" readonly="" disabled=""></div>
+                                    </div>
+                                    <div class="formline select-user">
+                                        <em class="icon-Adult"><i class="iconfont">&#xe696;</i></em>
+                                        <i class="input-adult iconfont">成人&nbsp;&#xe602;</i>
+                                        <div class="select"><input type="text" class="selects" value="1" readonly=""><i class="icon-arr_down"></i></div>
+                                    </div>
+                                    <div class="formline select-user mr48">
+                                        <em class="icon-child"><i class="iconfont">&#xe61f;</i></em>
+                                        <i class="input-children iconfont">儿童&nbsp;&#xe602;</i>
+                                        <div class="select"><input type="text" class="selects" value="无" readonly=""><i class="icon-arr_down"></i></div>
+                                    </div>
+                                    <div class="formline select-user">
+                                        <em class="icon-seat"><i class="iconfont">&#xe62f;</i></em>
+                                        <i class="input-space">舱位等级</i>
+                                        <div class="select"><input type="text" class="selects w300" value="经济舱" readonly=""><i class="icon-arr_down"></i></div>
+                                    </div>
+                                    <div class="formline">
+                                        <em class="icon-airline2"><i class="iconfont">&#xe629;</i></em>
+                                        <i>航空公司</i>
+                                        <div class="airline-suggest"><input type="text" class="loacal w300" placeholder="中文/二字码" value=""></div>
+                                    </div>
+                                    <a class="search-btn">立即搜索</a>
+                                </div>
+                            </div>
+                            <!-- 往返 -->
+                            <div class="order_list"></div>
+                            <!-- 多程 -->
+                            <div class="order_list"></div>
+                        </div>
+                    </div>
+                    <div class="order_list"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 机票预订 end -->
+        <!-- footer begin -->
+        <div class="footer">
+            <div class="w1190">
+                <div class="clearfix pt30">
+                    <a href=""><img src="images/logo_bottom.png" class="logo fl" /></a>
+                    <div class="fl dv1">
+                        <a href="" target="_blank">关于我们</a>
+                        <a href="" target="_blank">联系我们</a>
+                        <a href="" target="_blank">友情链接</a>
+                    </div>
+                    <div class="fl dv2">
+                        <a href="" target="_blank">使用条款</a>
+                        <a href="" target="_blank">旅游资质</a>
+                    </div>
+                    <div class="fl dv3">
+
+                        <a href="" target="_blank">付款方式</a>
+                        <a href="" target="_blank">隐私版权声明</a>
+                    </div>
+                    <div class="fl dv4">
+                        <p>唯一官方电话：400-0033-010</p>
+                        <p>工作时间：周一至周五 09:00 - 18:00</p>
+                    </div>
+                </div>
+                <p class="pt">Copyright ©2017 锦程国旅 版权所有 旅游经营许可证：L-BJ-CJ00676</p>
+                <p class="pt">京ICP备17062022号</p>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+</body>
+
+</html>
+<script src="js/global.js"></script>
